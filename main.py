@@ -37,7 +37,7 @@ def main():
     bridge = Bridge()
     is_found = False
     light_list = bridge.lights
-    bed1, bed2, hallway, kitchen = sort_lights(light_list)
+    bed1, hallway, bed2, kitchen = sort_lights(light_list)
     
     while True:
         # Scan for devices
@@ -48,17 +48,19 @@ def main():
 
         #Check result of scan
         if result:
-            if is_found == False:
+            if not is_found:
                 print("Change detected: Turning ON Lights!")
+                # Turn on lgihts
                 for light in bed1:
-                    light.turn_on()
+                    light.on = True
             is_found = True
-            # print("DEVICE FOUND")
+
         else:
-            if is_found == True:
+            if is_found:
                 print("Change detected: Turning OFF Lights")
+                # Turn off lights
                 for light in bed1:
-                    light.turn_off()
+                    light.on = False
             is_found = False
             print("DEVICE LOST")
 

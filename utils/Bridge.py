@@ -76,4 +76,8 @@ class Bridge(Bridge):
         """Set the transition time of the light."""
         self.set_light(light_id, 'transitiontime', transition_time)
 
-        
+if __name__ == '__main__':
+    bridge = Bridge()
+    print(bridge.get_api())
+    lights_list = bridge.lights
+    lights_list[0].on = False

@@ -8,6 +8,8 @@ import asyncio
 from bleak import BleakScanner
 
 class BluetoothScanner:
+    """ Class for scanning for BLE devices. the run() method takes a list of MAC addresses to scan for.
+     If any of the devices provided in the parameters are found, the method returns True. Otherwise, it returns False."""
     def __init__(self, target_addresses):
         self.target_addresses = target_addresses
 
