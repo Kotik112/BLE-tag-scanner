@@ -1,6 +1,8 @@
 # BLE Tag Bluetooth Scanner with Hue Bridge Control
 This program scans for a specific BLE (Bluetooth Low Energy) tag using its MAC address, and controls a set of lights connected to a Philips Hue Bridge based on whether the tag is found. The lights can be grouped and controlled separately using the Bridge class.
 
+## Hardware Setup
+![image](https://user-images.githubusercontent.com/88910492/207051605-f3dbafa1-f166-432c-afb0-702207988a7b.png)
 The program was developed on and has been tested on a Raspberry Pi. Results on other IoT devices may vary.
 
 ## Getting Started
