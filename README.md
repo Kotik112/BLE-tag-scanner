@@ -3,6 +3,7 @@ This program scans for a specific BLE (Bluetooth Low Energy) tag using its MAC a
 
 ## Hardware Setup
 ![image](https://user-images.githubusercontent.com/88910492/207051605-f3dbafa1-f166-432c-afb0-702207988a7b.png)
+
 The program was developed on and has been tested on a Raspberry Pi. Results on other IoT devices may vary.
 
 ## Getting Started
