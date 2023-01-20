@@ -1,6 +1,8 @@
 # BLE Tag Bluetooth Scanner with Hue Bridge Control
 This program scans for a specific BLE (Bluetooth Low Energy) tag using its MAC address, and controls a set of lights connected to a Philips Hue Bridge based on whether the tag is found. The lights can be grouped and controlled separately using the Bridge class.
 
+The program was developed on and has been tested on a Raspberry Pi. Results on other IoT devices may vary.
+
 ## Getting Started
 Make sure you have Python 3.7 or later installed on your system.
 Install the required dependencies by running:
@@ -31,5 +33,4 @@ The program currently only supports scanning every 10 seconds and does not suppo
 
 ## Additional notes
 The Bridge class is a subclass of the phue library's Bridge class and extends its functionality to include additional methods for controlling the lights.
-A file named config.py is required, containing the IP address and username of your Philips Hue Bridge. This file should be added to .gitignore to keep login information private.
 The set_color_loop method is blocking and should be run in a separate thread.
